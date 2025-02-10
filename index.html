@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>calcU by Bernal</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <div id="calc">
+        <h1>calcU</h1>
+        <p id="instr">This page is an interface to calculating basic arithmetic operations. By inputting two numbers and clicking on one of the arithmetic operations provided, this page will provide the output below.</p>
+        <main>
+            <input type="text" id="num1" placeholder="Num 1">
+            <input type="text" id="num2" placeholder="Num 2">
+            <br><br>
+            <button onclick="output(document.getElementById('num1').value,document.getElementById('num2').value,add(parseFloat(document.getElementById('num1').value), parseFloat(document.getElementById('num2').value)),'sum')">+</button>
+            <button onclick="output(document.getElementById('num1').value,document.getElementById('num2').value,sub(parseFloat(document.getElementById('num1').value), parseFloat(document.getElementById('num2').value)),'difference')">-</button>
+            <button onclick="output(document.getElementById('num1').value,document.getElementById('num2').value,mul(parseFloat(document.getElementById('num1').value), parseFloat(document.getElementById('num2').value)),'product')">*</button>
+            <button onclick="output(document.getElementById('num1').value,document.getElementById('num2').value,div(parseFloat(document.getElementById('num1').value), parseFloat(document.getElementById('num2').value)),'quotient')">/</button>
+            <button onclick="output(document.getElementById('num1').value,document.getElementById('num2').value,rem(parseFloat(document.getElementById('num1').value), parseFloat(document.getElementById('num2').value)),'remainder')">%</button>
+            <p id="res">Results will be displayed here.</p>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

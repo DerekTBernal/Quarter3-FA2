@@ -1,0 +1,39 @@
+h1,
+p,
+button,
+input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    border: 2px grey solid;
+    border-radius: 5px;
+}
+
+button {
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: black;
+    border-color: white;
+    color: white;
+    transform: rotate(360deg);
+}
+
+#calc {
+    border: 2px solid grey;
+    padding: 10px;
+    width: 310px;
+    height: 350px;
+    margin: auto;
+    box-shadow: 10px 10px 10px 3px #888888;
+}
